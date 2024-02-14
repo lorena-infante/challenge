@@ -10,6 +10,10 @@
     width: 100%;
 }
 
+.d-none {
+    display:none;
+}
+
 .indicators ul {
     list-style: none inside;
     display: inline-flex;
