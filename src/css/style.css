@@ -47,6 +47,11 @@
     background-position: 50%;
     background-size: cover;
     cursor: pointer;
+
+    /**/
+    background-color: white;
+    width:15px;
+    border-radius: 100%;
 }
 
 .next {
@@ -61,4 +66,9 @@
     background-position: 50%;
     background-size: cover;
     cursor: pointer;
+
+    /**/
+    background-color: white;
+    width: 15px;
+    border-radius: 100%;
 }

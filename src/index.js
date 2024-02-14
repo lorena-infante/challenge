@@ -15,13 +15,35 @@ const indic3 = document.getElementById("three");
 const indic4 = document.getElementById("four");
 const indic5 = document.getElementById("five");
 
-const img1 = document.getElementById('carousel-img-1');
-const img2 = document.getElementById('carousel-img-2');
-const img3 = document.getElementById('carousel-img-3');
-const img4 = document.getElementById('carousel-img-4');
-const img5 = document.getElementById('carousel-img-5');
+const prev = document.getElementById("previous");
+const next = document.getElementById("next");
+
+const img1 = document.getElementById("carousel-img-1");
+const img2 = document.getElementById("carousel-img-2");
+const img3 = document.getElementById("carousel-img-3");
+const img4 = document.getElementById("carousel-img-4");
+const img5 = document.getElementById("carousel-img-5");
 
 //active the class on click
+
+next.addEventListener('click',() =>{
+if (!img1.classList.contains('d-none')){
+  indic2.classList.add("active-indic");
+  img2.classList.remove("d-none");
+  
+  indic1.classList.remove("active-indic");
+  indic3.classList.remove("active-indic");
+  indic4.classList.remove("active-indic");
+  indic5.classList.remove("active-indic");
+  
+  img1.classList.add("d-none");
+  img3.classList.add("d-none");
+  img4.classList.add("d-none");
+  img5.classList.add("d-none");
+}
+
+
+})
 
 indic1.addEventListener("click", () => {
   indic1.classList.add("active-indic");
@@ -36,7 +58,6 @@ indic1.addEventListener("click", () => {
   img3.classList.add("d-none");
   img4.classList.add("d-none");
   img5.classList.add("d-none");
-  
 });
 
 indic2.addEventListener("click", () => {
@@ -53,7 +74,6 @@ indic2.addEventListener("click", () => {
   img4.classList.add("d-none");
   img5.classList.add("d-none");
 });
-
 
 indic3.addEventListener("click", () => {
   indic3.classList.add("active-indic");
