@@ -1,2 +1,2 @@
-# howdy-challenge
+# challenge
 HTML,CSS, JS Challenge
